@@ -670,8 +670,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .form-title {
-padding-top: 72px;
-font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-top: 72px;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -706,6 +708,7 @@ font-weight: 500;
     fill: currentColor;
 }
 .form-input {
+    padding-left: 38px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -717,6 +720,8 @@ font-weight: 500;
  fill:var(--brend-color);
 }
 .form-textarea {
+    margin-bottom: 16px;
+    padding: 8px 16px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -724,4 +729,41 @@ font-weight: 500;
 }
 .form-textarea:is(:hover,:focus){
     border: 1px solid #4D5AE5;
+}
+.form-confirmation {
+display: flex;
+gap: 8px;
+margin-bottom: 12px;
+}
+.form-policy {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #757575;
+}
+.form-link {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color:  var(--brend-color);
+}
+.form-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 169px;
+    height: 56px;
+    cursor: pointer;
+
+    border: none;
+    background: var(--brend-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+   
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
 }
