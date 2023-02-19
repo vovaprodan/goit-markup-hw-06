@@ -641,7 +641,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border-radius: 4px;
 
     width: 408px;
-    height: 576px;
+    height: 584px;
     background-color: #fcfcfc;
 }
 .modal-button {
@@ -668,28 +668,60 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     background-color: var(--hover-active-color);
     fill: var(--white-color);
 }
-.form-container {
+
+.form-title {
+padding-top: 72px;
+font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.form {
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding-left: 24px;
     padding-right: 24px;
 }
-.form-name {
+.form-label {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 4px;
+} 
+.form-field {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
-.form-phone {
-    display: flex;
-    flex-direction: column;
+.form-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 16px;
+    top: 30px;
+    fill: currentColor;
 }
-
-.form-email {
-    display:flex;
-    flex-direction: column;
+.form-input {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
-
-.form-comment {
-    display: flex;
-    flex-direction: column;
+.form-input:is(:hover,:focus) {
+    border: 1px solid #4D5AE5;
+}
+.form-input:is(:hover,:focus) + .form-icon {
+ fill:var(--brend-color);
+}
+.form-textarea {
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+}
+.form-textarea:is(:hover,:focus){
+    border: 1px solid #4D5AE5;
 }

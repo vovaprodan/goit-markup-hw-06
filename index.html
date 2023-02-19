@@ -394,24 +394,33 @@
                 <use href="./images/icons.svg#icon-close-black"  ></use>
             </svg>
         </button>
-        <b>Leave your contacts and we will call you back</b>
+        <h2 class="form-title">Leave your contacts and we will call you back</h2>
         <form class="form">
-            <div class="form-container">
-                <div class="form-name">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
+                <div class="form-field">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-input" type="text" name="name" id="name">
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
                 </div>           
-                <div class="form-phone">
-                    <label for="tel">Phone</label>
-                    <input type="tel" name="phone-number">
+                <div class="form-field">
+                    <label class="form-label" for="tel">Phone</label>
+                    <input class="form-input" type="tel" name="tel"
+                    id="tel">
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
                 </div> 
-                <div class="form-email">
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
+                <div class="form-field">
+                    <label class="form-label" for="mail">Email</label>
+                    <input class="form-input" type="email" name="email" id="mail">
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
                 </div>  
-                <div class="form-comment">
-                    <label for="comment">Comment</label>
-                    <textarea name="" id="comment" cols="30" rows="10" placeholder="Text input"></textarea>
+                <div class="form-field">
+                    <label class="form-label" for="comment">Comment</label>
+                    <textarea class="form-textarea" name="" id="comment" cols="30" rows="10" placeholder="Text input"></textarea>
                 </div>
             
     
@@ -419,7 +428,6 @@
             <label for="Privacy-Policy">I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
             
             <button type="submit">Send</button>
-            </div>
         </form>
     </div>
  </div>
