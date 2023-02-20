@@ -378,13 +378,18 @@
             </li>
         </ul>
         </div>
-        <div class="footer-form">
-           <form>
-            <label for="email">Subscribe</label>
-            <input type="email" name="email" id="email" placeholder="E-mail">
-            <button type="submit">Subscribe</button>
-           </form>
-        </div>
+           <div class="container-form">
+            <b class="subscribe">Subscribe</b>
+            <form class="form-footer">
+                <input class="footer-input" type="email" name="email" placeholder="E-mail">
+                <div class="footer-icon-frame">
+                    <button class="footer-form-btn" type="submit">Subscribe</button>
+                    <svg class="icon-frame" width="24" height="24">
+                        <use href="./images/icons.svg#icon-frame"></use>
+                    </svg>
+                </div>
+            </form>
+           </div>
     </div>
  </footer>
  <div class="backdrop is-hidden" data-modal>
@@ -394,29 +399,34 @@
                 <use href="./images/icons.svg#icon-close-black"  ></use>
             </svg>
         </button>
-        <h2 class="form-title">Leave your contacts and we will call you back</h2>
+        <b class="form-title">Leave your contacts and we will call you back</b>
         <form class="form">
                 <div class="form-field">
                     <label class="form-label" for="name">Name</label>
-                    <input class="form-input" type="text" name="name" id="name">
-                    <svg class="form-icon">
-                        <use href="./images/icons.svg#icon-person"></use>
-                    </svg>
+                    <div class="form-wrap">
+                        <input class="form-input" type="text" name="name" id="name">
+                        <svg class="form-icon">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
                 </div>           
                 <div class="form-field">
                     <label class="form-label" for="tel">Phone</label>
-                    <input class="form-input" type="tel" name="tel"
-                    id="tel">
-                    <svg class="form-icon">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
+                    <div class="form-wrap">
+                        <input class="form-input" type="tel" name="tel" id="tel">
+                        <svg class="form-icon">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
                 </div> 
                 <div class="form-field">
                     <label class="form-label" for="mail">Email</label>
-                    <input class="form-input" type="email" name="email" id="mail">
-                    <svg class="form-icon">
-                        <use href="./images/icons.svg#icon-email"></use>
-                    </svg>
+                    <div class="form-wrap">
+                        <input class="form-input" type="email" name="email" id="mail">
+                        <svg class="form-icon">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
                 </div>  
                 <div class="form-field">
                     <label class="form-label" for="comment">Comment</label>
@@ -425,9 +435,14 @@
             
     
            <div class="form-confirmation">
-            <input type="checkbox" value="I accept the terms and conditions of the Privacy Policy" id="Privacy-Policy">
+            <div class="form-click">
+                <input type="checkbox" value="I accept the terms and conditions of the Privacy Policy" id="Privacy-Policy">
+                <svg class="icon-click" width="16" height="16">
+                    <use href="./images/icons.svg#icon-click"></use>
+                </svg>
+            </div>
             <label class="form-policy" for="Privacy-Policy">I accept the terms and conditions of the
-                <a class="form-link link" href="">Privacy Policy</a></label>
+                <a class="form-link" href="">Privacy Policy</a></label>
            </div>
             
             <button class="form-button" type="submit">Send</button>
