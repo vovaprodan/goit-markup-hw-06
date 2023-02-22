@@ -800,14 +800,10 @@ display: flex;
 gap: 8px;
 margin-bottom: 24px;
 }
-.form-click {
-    position: relative;
-}
-.icon-click {
-    position: absolute;
-    left: 0;
-    background-color: var(--hover-active-color);
-    border: 1.25px solid #404BBF;
+.form-link span {
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
     border-radius: 2px;
 }
 
