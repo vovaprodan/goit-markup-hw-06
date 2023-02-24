@@ -477,6 +477,9 @@ margin-right: 80px;
     letter-spacing: 0.02em;
     color: var(--white-color);
 }
+.form-footer {
+    display: flex;
+}
 
 .footer-input {
     padding: 8px 16px;
@@ -497,27 +500,32 @@ margin-right: 80px;
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-form-btn {
-    width: 164px;
+    width: 165px;
     height: 40px;
     border: none;
+    display: flex;
     align-items: center;
-    padding: 8px 24px;
+    justify-content: center;
     background: var(--brend-color);
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--white-color);
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icon-frame {
-    position: relative;
+.footer-form-btn:hover,
+.footer-form-btn:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--hover-active-color);
 }
 .icon-frame {
-   position: absolute;
-   top: 50%;
-   
+    margin-left: 16px;
 }
+ 
 
 
 /* Портфоліо */
@@ -800,14 +808,24 @@ display: flex;
 gap: 8px;
 margin-bottom: 24px;
 }
-.form-link span {
+.form-policy  span {
     width: 16px;
     height: 16px;
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    fill: transparent;
+}
+.input-check:checked + .form-policy span{
+    background-color: var(--hover-active-color);
+    fill: var(--hover-card-color);
 }
 
 .form-policy {
+    display: flex;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
@@ -838,4 +856,12 @@ margin-bottom: 24px;
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+.form-button:hover,
+.form-button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--hover-active-color);
 }
