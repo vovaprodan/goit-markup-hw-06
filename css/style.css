@@ -693,6 +693,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     pointer-events: none;
 }
 .model {
+    padding: 72px 24px 24px 24px;
     position: absolute;
     top:50%;
     left:50%; 
@@ -700,7 +701,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border-radius: 4px;
 
     width: 408px;
-    height: 608px;
+    height: 584px;
     background-color: #fcfcfc;
 }
 .modal-button {
@@ -729,7 +730,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 .form-title {
     display: block;
-    padding-top:72px;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -741,24 +741,20 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
 }
-.form-field {
-    display: flex;
-    flex-direction: column;
-}
+
+
 .form-label {
+    margin-bottom: 4px;
     font-size: 12px;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    margin-bottom: 4px;
 } 
 
 .form-wrap {
     position: relative;
+    margin-bottom: 8px;
 }
 .form-icon {
     position: absolute;
@@ -777,7 +773,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:is(:hover,:focus) {
+.form-input:hover,
+.form-input:focus {
     border: 1px solid #4D5AE5;
 }
 .form-input:is(:hover,:focus) + .form-icon {
